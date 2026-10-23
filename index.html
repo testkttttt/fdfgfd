@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZEUS Studio — Цифровое Ателье</title>
+  <meta name="description" content="ZEUS — студия цифрового дизайна. Веб, 3D, брендинг." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* Pixel-art rendering: fetch at low res, display large = real pixelated look */
+    .featured-bg img,
+    .thumb-img img,
+    .slide-img img {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+  </style>
+</head>
+<body class="page-home">
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="ZEUS — На главную">
+      <span class="logo-mark">Z</span>
+      <span class="logo-text">ZEUS</span>
+    </a>
+    <nav class="main-nav" id="main-nav" role="navigation" aria-label="Главное меню">
+      <ul class="nav-list">
+        <li><a href="index.html"     class="nav-link active" aria-current="page">Главная</a></li>
+        <li><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+        <li><span style="opacity:.3;padding:0 .5rem;color:var(--border-dk)">·</span></li>
+        <li><a href="#contests"      class="nav-link">Избранное</a></li>
+        <li><a href="contact.html"   class="nav-link">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <h1 class="hero-title" id="hero-heading">
+      Pixel Art
+      <span class="accent">Gallery</span>
+    </h1>
+
+    <div class="hero-scene" role="img" aria-label="Ночной город">
+      <div class="hero-bg-city"></div>
+
+      <div class="px-buildings">
+        <div class="px-bld" style="width:80px;height:45%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:50px;height:65%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:120px;height:55%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:40px;height:80%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:90px;height:50%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:60px;height:72%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:100px;height:40%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:45px;height:62%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:80px;height:85%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:110px;height:48%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+        <div class="px-bld" style="width:55px;height:70%">
+          <div class="px-bld-windows">
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+            <div class="px-win"></div><div class="px-win"></div><div class="px-win"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-sign" style="bottom:22%;right:18%;font-size:2rem;color:var(--gold);text-shadow:0 0 12px var(--gold),0 0 30px rgba(184,148,60,.3);">横<br>浜</div>
+      <div class="px-sign" style="bottom:36%;right:32%;font-size:.9rem;color:var(--gold-lt);text-shadow:0 0 8px var(--gold-lt);animation-delay:-2s;font-family:var(--font-mono);">HOTEL</div>
+
+      <div class="hero-char" aria-hidden="true">🚶</div>
+
+      <div class="hero-info-box">
+        <p>Галерея уникальных пиксельных изображений и анимаций, которые вы можете использовать в своих проектах!</p>
+        <br>
+        <p>Если вы художник — станьте автором и зарабатывайте вместе с нами!</p>
+      </div>
+
+      <div class="hero-cta-box">
+        <a href="contact.html" class="btn btn-ghost">Стать автором</a>
+        <a href="portfolio.html" class="btn btn-primary">Портфолио</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEST ARTS THIS MONTH -->
+<section class="section best-arts-section" aria-labelledby="best-arts-heading">
+  <div class="section-inner">
+    <div class="best-arts-tag" id="best-arts-heading">Лучшие работы месяца</div>
+
+    <div class="best-arts-layout">
+      <div class="featured-card">
+        <!-- Low-res (80×60) fetched, displayed large → true pixel art look -->
+        <div class="featured-bg">
+          <img src="https://picsum.photos/seed/pxcity1/80/60"
+               alt="Midnight City v2 — пиксель-арт"
+               style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" />
+        </div>
+        <button class="art-like" id="like-featured" aria-label="Лайк" aria-pressed="false">♡</button>
+        <div class="featured-overlay">
+          <div class="art-author">
+            <div class="art-avatar">S</div>
+            <div>
+              <div class="art-name">Sony T</div>
+              <div class="art-handle">@sony_t</div>
+            </div>
+          </div>
+          <div class="art-title">Midnight City v2</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="thumb-grid">
+          <!-- All thumbnails: 48×48 px fetched → pixelated display -->
+          <div class="thumb t1" tabindex="0" aria-label="Работа 2">
+            <div class="thumb-img"><img src="https://picsum.photos/seed/pxarch/48/48"    alt="Пиксель-арт: архитектура" style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" /></div>
+          </div>
+          <div class="thumb t2" tabindex="0" aria-label="Работа 3">
+            <div class="thumb-img"><img src="https://picsum.photos/seed/pxneon/48/48"    alt="Пиксель-арт: неон"        style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" /></div>
+          </div>
+          <div class="thumb t3" tabindex="0" aria-label="Работа 4">
+            <div class="thumb-img"><img src="https://picsum.photos/seed/pxforest/48/48"  alt="Пиксель-арт: лес"         style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" /></div>
+          </div>
+          <div class="thumb t4" tabindex="0" aria-label="Работа 5">
+            <div class="thumb-img"><img src="https://picsum.photos/seed/pxdungeon/48/48" alt="Пиксель-арт: подземелье"  style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" /></div>
+          </div>
+          <div class="thumb t5" tabindex="0" aria-label="Работа 6">
+            <div class="thumb-img"><img src="https://picsum.photos/seed/pxspace/48/48"   alt="Пиксель-арт: космос"      style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" /></div>
+          </div>
+          <div class="thumb t6" tabindex="0" aria-label="Работа 1">
+            <div class="thumb-img"><img src="https://picsum.photos/seed/pxcastle/48/48"  alt="Пиксель-арт: замок"       style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" /></div>
+          </div>
+          <div class="contests-row" id="contests" tabindex="0" role="link" onclick="location='portfolio.html'">
+            <span>Избранное</span>
+            <span class="contests-arrow">——&gt;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDER -->
+<section class="section slider-section" aria-labelledby="slider-heading">
+  <div class="section-inner">
+    <div class="section-label">Избранные проекты</div>
+    <h2 id="slider-heading" style="color:var(--ivory);margin-bottom:1.8rem">Последние работы</h2>
+
+    <div class="slider-wrap">
+      <div class="slider" id="slider" role="region" aria-label="Карусель проектов" tabindex="0">
+
+        <!-- Слайд 1: Ночной кибер-город — low res → pixelated -->
+        <article class="slide active">
+          <div class="slide-img" style="background:#0f0c29;">
+            <img src="https://picsum.photos/seed/pxnightcity/160/90"
+                 alt="Pixel City Nightscape"
+                 style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Пиксель-арт · Городской пейзаж</span>
+            <h3>Pixel City Nightscape</h3>
+            <p>Ночной киберпанк-город в стиле ретро-пиксель. Детальная сцена с неоновыми огнями и дождём.</p>
+            <a href="portfolio.html" class="slide-link">Подробнее →</a>
+          </div>
+        </article>
+
+        <!-- Слайд 2: Пиксельный лес -->
+        <article class="slide">
+          <div class="slide-img" style="background:#0a1f14;">
+            <img src="https://picsum.photos/seed/pxwoodland/160/90"
+                 alt="Pixel Forest Spirit"
+                 style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Пиксель-арт · Природа</span>
+            <h3>Forest Spirit</h3>
+            <p>Мистический пиксельный лес с анимированными духами природы и магическим светом.</p>
+            <a href="portfolio.html" class="slide-link">Подробнее →</a>
+          </div>
+        </article>
+
+        <!-- Слайд 3: Ретро-герой -->
+        <article class="slide">
+          <div class="slide-img" style="background:#200a10;">
+            <img src="https://picsum.photos/seed/pxretrogame/160/90"
+                 alt="Retro Arcade Hero"
+                 style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Пиксель-арт · Персонаж</span>
+            <h3>Retro Arcade Hero</h3>
+            <p>Анимированный персонаж в стиле классических аркадных игр 16-bit эпохи.</p>
+            <a href="portfolio.html" class="slide-link">Подробнее →</a>
+          </div>
+        </article>
+
+        <!-- Слайд 4: Космос -->
+        <article class="slide">
+          <div class="slide-img" style="background:#080f1a;">
+            <img src="https://picsum.photos/seed/pxgalaxy/160/90"
+                 alt="Space Explorer"
+                 style="width:100%;height:100%;object-fit:cover;image-rendering:pixelated;" />
+          </div>
+          <div class="slide-body">
+            <span class="slide-tag">Пиксель-арт · Космос</span>
+            <h3>Space Explorer</h3>
+            <p>Пиксельная космическая сцена с планетами, звёздами и ретро-кораблём.</p>
+            <a href="portfolio.html" class="slide-link">Подробнее →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="slider-prev" aria-label="Предыдущий слайд">&#8249;</button>
+        <div class="slider-dots" id="slider-dots" role="tablist">
+          <button class="dot active" data-idx="0" role="tab" aria-selected="true"  aria-label="Слайд 1"></button>
+          <button class="dot"        data-idx="1" role="tab" aria-selected="false" aria-label="Слайд 2"></button>
+          <button class="dot"        data-idx="2" role="tab" aria-selected="false" aria-label="Слайд 3"></button>
+          <button class="dot"        data-idx="3" role="tab" aria-selected="false" aria-label="Слайд 4"></button>
+        </div>
+        <button class="slider-btn" id="slider-next" aria-label="Следующий слайд">&#8250;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" aria-labelledby="services-heading">
+  <div class="section-inner">
+    <div class="section-label">Что мы делаем</div>
+    <h2 id="services-heading" style="margin-bottom:0">Наши услуги</h2>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-num">01</div>
+        <h3>Веб-дизайн</h3>
+        <p>Уникальные интерфейсы, адаптированные под все устройства и типы пользователей.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-num">02</div>
+        <h3>3D и Анимация</h3>
+        <p>Интерактивные 3D-сцены и кинематографические анимации для вашего продукта.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-num">03</div>
+        <h3>Брендинг</h3>
+        <p>Визуальная идентичность, которую невозможно спутать ни с одним другим брендом.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-num">04</div>
+        <h3>Разработка</h3>
+        <p>Современный стек, чистый код, высокая производительность на всех платформах.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section stats-section" aria-labelledby="stats-heading">
+  <div class="section-inner">
+    <div class="section-label" style="color:rgba(184,148,60,.6)">В цифрах</div>
+    <div class="stats-grid">
+      <div class="stat" data-target="120">
+        <div class="stat-num">0</div><span class="stat-suf">+</span>
+        <p>Проектов</p>
+      </div>
+      <div class="stat" data-target="7">
+        <div class="stat-num">0</div><span class="stat-suf"> лет</span>
+        <p>Опыта</p>
+      </div>
+      <div class="stat" data-target="40">
+        <div class="stat-num">0</div><span class="stat-suf">+</span>
+        <p>Клиентов</p>
+      </div>
+      <div class="stat" data-target="98">
+        <div class="stat-num">0</div><span class="stat-suf">%</span>
+        <p>Довольных</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="section-inner">
+    <div class="cta-frame">
+      <h2>Готовы создать что-то великое?</h2>
+      <p>Расскажите нам о вашем проекте — ответим в течение 24 часов.</p>
+      <a href="contact.html" class="btn btn-primary">Начать проект</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo"><span class="logo-mark">Z</span><span class="logo-text">ZEUS</span></a>
+      <p>Цифровая студия нового поколения.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Нижняя навигация">
+      <a href="index.html">Главная</a>
+      <a href="portfolio.html">Портфолио</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 ZEUS Studio</p>
+  </div>
+</footer>
+
+<script src="transitions.js"></script>
+<script src="main.js"></script>
+<script>
+// Override thumb click to swap featured image with low-res pixel art seeds
+(function () {
+  var PIXEL_THUMBS = [
+    'https://picsum.photos/seed/pxarch/80/60',
+    'https://picsum.photos/seed/pxneon/80/60',
+    'https://picsum.photos/seed/pxforest/80/60',
+    'https://picsum.photos/seed/pxdungeon/80/60',
+    'https://picsum.photos/seed/pxspace/80/60',
+    'https://picsum.photos/seed/pxcastle/80/60',
+  ];
+  document.addEventListener('DOMContentLoaded', function () {
+    var featured = document.querySelector('.featured-bg');
+    var thumbs   = document.querySelectorAll('.thumb');
+    if (!featured || !thumbs.length) return;
+    thumbs.forEach(function (thumb, i) {
+      thumb.addEventListener('click', function () {
+        var img = featured.querySelector('img');
+        if (!img) return;
+        featured.style.filter = 'brightness(2)';
+        img.src = PIXEL_THUMBS[i] || PIXEL_THUMBS[0];
+        img.style.imageRendering = 'pixelated';
+        setTimeout(function () { featured.style.filter = ''; }, 80);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

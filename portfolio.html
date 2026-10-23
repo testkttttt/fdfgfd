@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио — ZEUS Studio</title>
+  <meta name="description" content="Галерея ZEUS Studio — проекты, пиксель-арт и 3D." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="page-portfolio">
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="ZEUS — На главную">
+      <span class="logo-mark">Z</span>
+      <span class="logo-text">ZEUS</span>
+    </a>
+    <nav class="main-nav" id="main-nav" role="navigation" aria-label="Главное меню">
+      <ul class="nav-list">
+        <li><a href="index.html"     class="nav-link">Главная</a></li>
+        <li><a href="portfolio.html" class="nav-link active" aria-current="page">Портфолио</a></li>
+        <li><span style="opacity:.3;padding:0 .5rem;color:var(--border-dk)">·</span></li>
+        <li><a href="index.html#contests" class="nav-link">Избранное</a></li>
+        <li><a href="contact.html"   class="nav-link">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="page-hero-inner">
+    <div class="section-label">Наши работы</div>
+    <h1 class="page-title" id="page-title">Портфолио</h1>
+    <p class="page-sub">Избранные проекты и интерактивные 3D-сцены.</p>
+  </div>
+</section>
+
+<!-- THREE.JS 3D -->
+<section class="section threejs-section" aria-labelledby="three-heading">
+  <div class="section-inner" style="text-align:center">
+    <div class="section-label">Интерактивная 3D сцена</div>
+    <h2 id="three-heading" style="margin-bottom:.5rem">3D Модель</h2>
+    <p style="font-size:.82rem;max-width:440px;margin:0 auto 2rem">
+      Перетащите для вращения · Прокрутите для зума · Коснитесь на мобильном.
+    </p>
+
+    <div class="three-canvas-wrap">
+      <canvas id="three-canvas"></canvas>
+
+      <div class="three-hud">
+        <div class="three-label" id="three-label">&gt; ZEUS_СТАНЦИЯ_</div>
+        <div class="three-hint">Перетащите · Прокрутите · Коснитесь</div>
+      </div>
+
+      <div class="three-controls-ui">
+        <button class="three-ctrl-btn" id="btn-wireframe">Каркас</button>
+        <button class="three-ctrl-btn" id="btn-reset">Сброс</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER + GRID -->
+<section class="section" aria-labelledby="grid-heading">
+  <div class="section-inner">
+    <div class="section-label">Проекты</div>
+    <h2 id="grid-heading" style="margin-bottom:1.5rem">Все работы</h2>
+
+    <div class="filter-bar" role="group" aria-label="Фильтрация">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="web">Веб</button>
+      <button class="filter-btn" data-filter="3d">3D</button>
+      <button class="filter-btn" data-filter="brand">Бренд</button>
+      <button class="filter-btn" data-filter="app">Приложения</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+
+      <article class="portfolio-card" data-cat="web 3d" tabindex="0">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#0a0818,#150f28);">
+          <img src="https://res.cloudinary.com/d3bmismy/image/upload/f_webp/q_auto:good/cs_srgb/dpr_auto/Gemini_Generated_Image_n5o466n5o466n5o4_1_wpymbj.jpg" alt="Cosmos Dashboard" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags"><span>Веб</span><span>3D</span></div>
+          <h3>Cosmos Dashboard</h3>
+          <p>Интерактивный дашборд с 3D-визуализацией данных для финтех-стартапа.</p>
+        </div>
+        <div class="pcard-hover-bar">Открыть проект →</div>
+      </article>
+
+      <article class="portfolio-card" data-cat="brand" tabindex="0">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#061510,#0d2018);">
+          <img src="https://res.cloudinary.com/d3bmismy/image/upload/f_webp/q_auto:good/cs_srgb/dpr_auto/Gemini_Generated_Image_8shkrm8shkrm8shk_fnhn3p.jpg" alt="EcoSphere Identity" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags"><span>Бренд</span><span>Дизайн</span></div>
+          <h3>EcoSphere Identity</h3>
+          <p>Полный фирменный стиль и интерфейсы для экологической платформы.</p>
+        </div>
+        <div class="pcard-hover-bar">Открыть проект →</div>
+      </article>
+
+      <article class="portfolio-card" data-cat="3d" tabindex="0">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#1a0608,#200808);">
+          <img src="https://res.cloudinary.com/d3bmismy/image/upload/f_webp/q_auto:good/cs_srgb/Gemini_Generated_Image_f3ck6uf3ck6uf3ck_uraenj.jpg" alt="Pulse Campaign" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags"><span>Анимация</span><span>3D</span></div>
+          <h3>Pulse Campaign</h3>
+          <p>Моушн-кампания для запуска продукта, охватившая 2M+ зрителей.</p>
+        </div>
+        <div class="pcard-hover-bar">Открыть проект →</div>
+      </article>
+
+      <article class="portfolio-card" data-cat="app" tabindex="0">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#060c18,#0a1222);">
+          <img src="https://res.cloudinary.com/d3bmismy/image/upload/f_webp/q_auto:good/cs_srgb/Gemini_Generated_Image_cit5iqcit5iqcit5_ee1rch.jpg" alt="Vanta Finance" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags"><span>Приложение</span><span>Дизайн</span></div>
+          <h3>Vanta Finance</h3>
+          <p>Мобильное приложение для управления инвестициями, 4.9★ в App Store.</p>
+        </div>
+        <div class="pcard-hover-bar">Открыть проект →</div>
+      </article>
+
+      <article class="portfolio-card" data-cat="web" tabindex="0">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#180608,#200808);">
+          <img src="https://res.cloudinary.com/d3bmismy/image/upload/f_webp/q_auto:good/cs_srgb/dpr_auto/Gemini_Generated_Image_mg0pqumg0pqumg0p_cm91ww.jpg" alt="Aurora E-commerce" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags"><span>Веб</span><span>Магазин</span></div>
+          <h3>Aurora E-commerce</h3>
+          <p>Флагманский интернет-магазин с конверсией +34% после редизайна.</p>
+        </div>
+        <div class="pcard-hover-bar">Открыть проект →</div>
+      </article>
+
+      <article class="portfolio-card" data-cat="brand" tabindex="0">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#101010,#181818);">
+          <img src="https://res.cloudinary.com/d3bmismy/image/upload/f_webp/q_auto:eco/cs_srgb/dpr_auto/Gemini_Generated_Image_ytbaxlytbaxlytba_ytgtpg.jpg" alt="Stonewall Architecture" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags"><span>Бренд</span></div>
+          <h3>Stonewall Architecture</h3>
+          <p>Строгий бренд для архитектурного бюро премиум-класса.</p>
+        </div>
+        <div class="pcard-hover-bar">Открыть проект →</div>
+      </article>
+
+    </div>
+    <p id="no-results" style="text-align:center;color:var(--text-lt);padding:3rem 0;display:none;font-style:italic;">
+      Ничего не найдено
+    </p>
+  </div>
+</section>
+
+<!-- INLINE 3D: Wireframe Sphere -->
+<section class="section" aria-labelledby="model2-heading">
+  <div class="section-inner" style="text-align:center">
+    <div class="section-label">Интерактивный объект</div>
+    <h2 id="model2-heading" style="margin-bottom:.5rem">Wireframe Globe</h2>
+    <p style="font-size:.82rem;max-width:440px;margin:0 auto 1.5rem">
+      Перетащите для вращения · Прокрутите для зума
+    </p>
+    <div style="display:inline-block;border:1px solid rgba(168,200,74,.18);border-radius:12px;overflow:hidden;background:#060a0e;position:relative;">
+      <canvas id="globe-canvas" width="520" height="380" style="display:block;cursor:grab;max-width:100%;"></canvas>
+      <div style="position:absolute;bottom:12px;left:16px;font-family:'DM Mono',monospace;font-size:.6rem;color:#a8c84a;opacity:.7;letter-spacing:.15em;">&gt; WIRE_GLOBE_</div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var canvas = document.getElementById('globe-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+
+  /* ── Параметры ── */
+  var W = canvas.width, H = canvas.height;
+  var cx = W/2, cy = H/2;
+  var R = 130;          // радиус сферы
+  var zoom = 1;
+  var rotX = 0.4, rotY = 0;
+  var velX = 0, velY = 0.006;
+  var drag = false, lx = 0, ly = 0;
+
+  /* ── Генерируем точки сетки сферы ── */
+  var RINGS = 14;   // горизонтальные круги (параллели)
+  var SEGS  = 24;   // точек на кольцо
+  var MERS  = 18;   // меридианы
+
+  /* Строим рёбра как пары точек [θ,φ] */
+  var edges = [];
+
+  // Параллели
+  for (var i = 1; i < RINGS; i++) {
+    var phi = (Math.PI / RINGS) * i;  // от 0 до PI
+    for (var j = 0; j < SEGS; j++) {
+      var t1 = (Math.PI*2/SEGS) * j;
+      var t2 = (Math.PI*2/SEGS) * ((j+1) % SEGS);
+      edges.push([phi, t1, phi, t2]);
+    }
+  }
+  // Меридианы
+  for (var m = 0; m < MERS; m++) {
+    var theta = (Math.PI*2/MERS) * m;
+    var STEPS = 32;
+    for (var s = 0; s < STEPS; s++) {
+      var p1 = (Math.PI/STEPS) * s;
+      var p2 = (Math.PI/STEPS) * (s+1);
+      edges.push([p1, theta, p2, theta]);
+    }
+  }
+
+  /* Перевод сферических → декартовы */
+  function sph(phi, theta) {
+    return [
+      Math.sin(phi) * Math.cos(theta),
+      Math.cos(phi),
+      Math.sin(phi) * Math.sin(theta)
+    ];
+  }
+
+  /* Вращение вокруг X затем Y */
+  function rotate(v) {
+    var x = v[0], y = v[1], z = v[2];
+    // вокруг X
+    var ry = y * Math.cos(rotX) - z * Math.sin(rotX);
+    var rz = y * Math.sin(rotX) + z * Math.cos(rotX);
+    y = ry; z = rz;
+    // вокруг Y
+    var rx = x * Math.cos(rotY) + z * Math.sin(rotY);
+    rz     = -x * Math.sin(rotY) + z * Math.cos(rotY);
+    return [rx, y, rz];
+  }
+
+  /* Проекция */
+  function project(v) {
+    var scale = R * zoom;
+    var fov   = 2.8;           // перспектива
+    var zOff  = fov;
+    var w = zOff / (zOff + v[2] * 0.6 + 1);
+    return [cx + v[0] * scale * w, cy - v[1] * scale * w, v[2]];
+  }
+
+  /* ── Drag ── */
+  canvas.addEventListener('mousedown', function(e){ drag=true; lx=e.clientX; ly=e.clientY; velX=0; velY=0; canvas.style.cursor='grabbing'; });
+  window.addEventListener('mouseup',   function(){ drag=false; canvas.style.cursor='grab'; });
+  window.addEventListener('mousemove', function(e){
+    if(!drag) return;
+    var dx = e.clientX-lx, dy = e.clientY-ly;
+    velY = dx * 0.008; velX = dy * 0.008;
+    rotY += velY; rotX += velX;
+    rotX = Math.max(-1.4, Math.min(1.4, rotX));
+    lx=e.clientX; ly=e.clientY;
+  });
+  canvas.addEventListener('wheel', function(e){
+    e.preventDefault();
+    zoom = Math.max(0.5, Math.min(2.2, zoom - e.deltaY * 0.001));
+  }, {passive:false});
+
+  /* Touch */
+  var tpx=0, tpy=0;
+  canvas.addEventListener('touchstart', function(e){ drag=true; tpx=e.touches[0].clientX; tpy=e.touches[0].clientY; velX=0; velY=0; },{passive:true});
+  canvas.addEventListener('touchend',   function(){ drag=false; },{passive:true});
+  canvas.addEventListener('touchmove',  function(e){
+    if(!drag) return;
+    var dx=e.touches[0].clientX-tpx, dy=e.touches[0].clientY-tpy;
+    velY=dx*0.008; velX=dy*0.008;
+    rotY+=velY; rotX+=velX;
+    rotX=Math.max(-1.4,Math.min(1.4,rotX));
+    tpx=e.touches[0].clientX; tpy=e.touches[0].clientY;
+  },{passive:true});
+
+  /* ── Анимация ── */
+  var hue = 0;
+  function frame() {
+    requestAnimationFrame(frame);
+
+    /* Инерция */
+    if (!drag) {
+      rotY += velY;
+      rotX += velX;
+      velX *= 0.92;
+      velY *= 0.98;
+      rotX = Math.max(-1.4, Math.min(1.4, rotX));
+    }
+
+    ctx.clearRect(0, 0, W, H);
+
+    /* Фон с виньеткой */
+    var grad = ctx.createRadialGradient(cx,cy,R*0.2,cx,cy,R*1.6);
+    grad.addColorStop(0, 'rgba(10,20,8,0.0)');
+    grad.addColorStop(1, 'rgba(4,8,4,0.85)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0,W,H);
+
+    hue += 0.3;
+
+    /* Рисуем рёбра */
+    for (var e = 0; e < edges.length; e++) {
+      var ed = edges[e];
+      var a = rotate(sph(ed[0], ed[1]));
+      var b = rotate(sph(ed[2], ed[3]));
+      var pa = project(a);
+      var pb = project(b);
+
+      /* Глубина — среднее Z для яркости */
+      var z = (pa[2] + pb[2]) / 2;
+      var bright = 0.25 + (z + 1) * 0.38;   // 0.25 .. 1.01
+      bright = Math.min(1, Math.max(0.08, bright));
+
+      /* Цвет: зелёно-золотой градиент по Y */
+      var yFactor = (a[1] + b[1]) / 2; // -1..1
+      var r, g, bl;
+      if (yFactor > 0) {
+        // верх — золотой
+        r = Math.round(184 * bright);
+        g = Math.round(148 * bright);
+        bl= Math.round(60  * bright);
+      } else {
+        // низ — зелёный
+        r = Math.round(80  * bright);
+        g = Math.round(180 * bright);
+        bl= Math.round(60  * bright);
+      }
+
+      ctx.beginPath();
+      ctx.moveTo(pa[0], pa[1]);
+      ctx.lineTo(pb[0], pb[1]);
+      ctx.strokeStyle = 'rgb('+r+','+g+','+bl+')';
+      ctx.lineWidth   = bright * 1.1;
+      ctx.stroke();
+    }
+
+    /* Центральный блик */
+    var glow = ctx.createRadialGradient(cx-R*0.25, cy-R*0.2, 0, cx, cy, R*0.6);
+    glow.addColorStop(0, 'rgba(200,180,80,0.12)');
+    glow.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R*0.6, 0, Math.PI*2);
+    ctx.fill();
+  }
+
+  frame();
+})();
+</script>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="section-inner">
+    <div class="cta-frame">
+      <h2>Хотите оказаться в галерее?</h2>
+      <p>Расскажите о вашей идее — мы воплотим её в жизнь.</p>
+      <a href="contact.html" class="btn btn-primary">Обсудить проект</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo"><span class="logo-mark">Z</span><span class="logo-text">ZEUS</span></a>
+      <p>Цифровая студия нового поколения.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Нижняя навигация">
+      <a href="index.html">Главная</a>
+      <a href="portfolio.html">Портфолио</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 ZEUS Studio</p>
+  </div>
+</footer>
+
+<script src="three_min.js"></script>
+<script src="transitions.js"></script>
+<script src="main.js"></script>
+<script src="simple-model.js"></script>
+</body>
+</html>
